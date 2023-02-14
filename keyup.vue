@@ -41,3 +41,42 @@ export default {
       message: "Welcome to Vue!",
     };
   },
+   methods: {
+    reset() {
+      let output = document.querySelector(".output");
+      let otherOutput = document.querySelector(".otherOutput");
+
+      otherOutput.innerHTML = "The values have been reset!";
+      setTimeout((myReset) => {
+        output.innerHTML = "";
+        otherOutput.innerHTML = "";
+      }, 2000);
+    },
+    myReset() {
+      let output = document.querySelector(".output");
+      let otherOutput = document.querySelector(".otherOutput");
+      output.innerHTML = "";
+      otherOutput.innerHTML = "";
+    },
+    keySubmit() {
+      let input = document.querySelector(".theInput");
+      let output = document.querySelector(".output");
+
+      output.innerHTML = input.value.toUpperCase();
+      input.value = "";
+    },
+    addGroup() {
+      let mGroupText = document.querySelectorAll(".mGroup");
+       let mGroupPass = document.querySelectorAll(".mGroup");
+        let mGroupNum = document.querySelector(".mGroup");
+      let mGroupOutput = document.getElementById("mGroupOutput");
+      
+      let mGroupOutput1 = document.querySelectorAll(".mGroup").value;
+      
+    mGroupOutput.innerHTML = (mGroupOutput1);
+      
+    },
+    alertMe() {
+      alert("Hello");
+    }
+  },
