@@ -91,3 +91,27 @@ body {
   background-color: lightgray;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 400px;
+  border: 1px solid black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+label,
+.output {
+  margin-left: 5px;
+}
+
+.output {
+  color: red;
+  font-weight: bolder;
+}
+
