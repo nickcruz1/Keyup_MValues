@@ -16,3 +16,17 @@
       </div>
       <h3 class="otherOutput"></h3>
     </div>
+
+  <!-- Keyup Test Currently Conducting -->
+    <div class="mContainer">
+      
+      <label for="text">Enter Text Here:</label>
+      <input class="mGroupText" @keyup.enter="addGroup" type="text">
+       <label for="password">Enter Password Here:</label>
+      <input class="mGroupPass" @keyup.enter="addGroup" type="password">
+      <label for="number">Enter Number Here:</label>
+      <input class="mGroupNum" @keyup.enter="addGroup" type="number">
+      
+      <div id="mGroupOutput"></div>
+      
+    </div>
