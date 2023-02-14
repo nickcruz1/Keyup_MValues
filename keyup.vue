@@ -115,3 +115,23 @@ label,
   font-weight: bolder;
 }
 
+input {
+  margin: auto;
+  width: 50%;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.reset {
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.reset:hover {
+  color: red;
+  cursor: pointer;
+}
