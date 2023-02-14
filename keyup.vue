@@ -135,3 +135,32 @@ input {
   color: red;
   cursor: pointer;
 }
+
+.otherOutput {
+  text-align: center;
+  margin-top: 1rem;
+  color: blue;
+}
+  
+  .mContainer {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    margin: 1rem auto 1rem auto;
+  }
+  
+  .mContainer button {
+    margin: 10px auto 10px auto;
+    border-radius: 10px;
+    padding: 5px;
+    width: 200px;
+  }
+  
+  .mContainer button:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: 2px solid white;
+  }
+  
+</style>
