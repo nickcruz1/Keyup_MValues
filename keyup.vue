@@ -30,3 +30,6 @@
       <div id="mGroupOutput"></div>
       
     </div>
+
+ </div>
+</template>
