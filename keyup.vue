@@ -5,3 +5,14 @@
      
       <label for="input">Please enter input below:</label>
       <br />
+
+   <input @keyup.enter="keySubmit" class="theInput" type="text" />
+      <br />
+
+      <div class="lContainer">
+        <label for="infoSubmitted">The Value Submitted is:</label>
+        <div class="output"></div>
+        <a @click="reset" class="reset" href="#">Reset &#8634;</a>
+      </div>
+      <h3 class="otherOutput"></h3>
+    </div>
