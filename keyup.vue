@@ -80,3 +80,8 @@ export default {
       alert("Hello");
     }
   },
+    mounted() {
+    console.log("Logged On mount")
+  }
+};
+</script>
