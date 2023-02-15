@@ -3,10 +3,9 @@
   <div id="app">
     <div class="container">
      
-      <label for="input">Please enter input below:</label>
+     <label for="input">Please enter input below:</label>
       <br />
-
-   <input @keyup.enter="keySubmit" class="theInput" type="text" />
+      <input @keyup.enter="keySubmit" class="theInput" type="text" />
       <br />
 
       <div class="lContainer">
