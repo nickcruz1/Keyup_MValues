@@ -1,9 +1,11 @@
-<!-- Have Key up work for multiple values grabbed from multiple input values... put them into template literals? -->
+<!-- Have multiple values not submit unless all 3 values have been entered -->
+<!-- Use an 'if-else' statement for this -->
+
 <template>
   <div id="app">
     <div class="container">
      
-     <label for="input">Please enter input below:</label>
+      <label for="input">Please enter input below:</label>
       <br />
       <input @keyup.enter="keySubmit" class="theInput" type="text" />
       <br />
@@ -15,8 +17,8 @@
       </div>
       <h3 class="otherOutput"></h3>
     </div>
-
- 
+    
+  
     <div class="mContainer">
       
       <label for="text">Enter Text Here:</label>
@@ -29,8 +31,10 @@
       <div id="mGroupOutput"></div>
       
     </div>
-
- </div>
+   
+    
+    
+  </div>
 </template>
 
 <script>
@@ -40,7 +44,7 @@ export default {
       message: "Welcome to Vue!",
     };
   },
-   methods: {
+  methods: {
     reset() {
       let output = document.querySelector(".output");
       let otherOutput = document.querySelector(".otherOutput");
@@ -64,7 +68,7 @@ export default {
       output.innerHTML = input.value.toUpperCase();
       input.value = "";
     },
-     addGroup() {
+    addGroup() {
       let mGroupText = document.querySelector(".mGroupText");
        let mGroupPass = document.querySelector(".mGroupPass");
         let mGroupNum = document.querySelector(".mGroupNum");
@@ -87,7 +91,7 @@ export default {
       alert("Hello");
     }
   },
-    mounted() {
+  mounted() {
     console.log("Logged On mount")
   }
 };
@@ -168,6 +172,33 @@ input {
     background-color: blue;
     color: white;
     border: 2px solid white;
+  }
+  
+  .mvContainer {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+  }
+  
+  .mvText {
+    text-align: center;
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  
+  .blueText {
+    color: blue;
+  }
+  
+  .redText {
+    color: red;
+  }
+  
+  .greenText {
+    color: lightgreen;
   }
   
 </style>
