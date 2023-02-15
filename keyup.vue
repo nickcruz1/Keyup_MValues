@@ -87,10 +87,6 @@ export default {
     </div>`; 
       
     },
-    alertMe() {
-      alert("Hello");
-    }
-  },
   mounted() {
     console.log("Logged On mount")
   }
