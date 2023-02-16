@@ -54,7 +54,7 @@ export default {
 
       otherOutput.innerHTML = "The values have been reset!";
       setTimeout((myReset) => {
-        output.innerHTML = "";
+      output.innerHTML = "";
         otherOutput.innerHTML = "";
         input.value ="";
         input.style.backgroundColor = "";
@@ -62,6 +62,7 @@ export default {
         mGroupOutput.innerHTML = "";
         for (let i = 0; i < mContainer.length; i++) {
         mContainer[i].value = "";
+        mContainer[i].style.border = "";
         }
       }, 2000);
     },
