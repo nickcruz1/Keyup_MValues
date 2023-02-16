@@ -96,7 +96,13 @@ export default {
         mGroupNum.placeholder = "Please Enter Number...";
         mGroupNum.style.border = "2px solid red";
         return false
-      }
+      } else {
+        mGroupText.value = "";
+        mGroupText.style.border = "2px solid lightgreen";
+        mGroupPass.value = "";
+        mGroupPass.style.border = "2px solid lightgreen";
+        mGroupNum.value  = "";
+        mGroupNum.style.border = "2px solid lightgreen";
       
     mGroupOutput.innerHTML = `
     <div class="mvContainer">
