@@ -88,6 +88,16 @@ export default {
       mGroupText.value, mGroupPass.value, mGroupNum.value 
     ]
       
+      if(mGroupText.value == '' || mGroupPass.value == '' || mGroupNum.value == '') {
+        mGroupText.placeholder = "Please Enter Text...";
+        mGroupText.style.border = "2px solid red";
+        mGroupPass.placeholder = "Please Enter Password...";
+        mGroupPass.style.border = "2px solid red";
+        mGroupNum.placeholder = "Please Enter Number...";
+        mGroupNum.style.border = "2px solid red";
+        return false
+      }
+      
     mGroupOutput.innerHTML = `
     <div class="mvContainer">
     <h2 class="mvText"> Multiple Value Submissions</h2>
