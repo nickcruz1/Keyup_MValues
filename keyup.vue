@@ -56,6 +56,13 @@ export default {
       setTimeout((myReset) => {
         output.innerHTML = "";
         otherOutput.innerHTML = "";
+        input.value ="";
+        input.style.backgroundColor = "";
+        input.placeholder = "";
+        mGroupOutput.innerHTML = "";
+        for (let i = 0; i < mContainer.length; i++) {
+        mContainer[i].value = "";
+        }
       }, 2000);
     },
     myReset() {
