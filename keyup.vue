@@ -48,6 +48,7 @@ export default {
     reset() {
         let input = document.querySelector(".theInput");
       let output = document.querySelector(".output");
+         let mGroupOutput = document.getElementById("mGroupOutput");
       let otherOutput = document.querySelector(".otherOutput");
 
       otherOutput.innerHTML = "The values have been reset!";
