@@ -46,6 +46,7 @@ export default {
   },
   methods: {
     reset() {
+        let input = document.querySelector(".theInput");
       let output = document.querySelector(".output");
       let otherOutput = document.querySelector(".otherOutput");
 
