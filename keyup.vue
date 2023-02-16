@@ -50,6 +50,7 @@ export default {
       let output = document.querySelector(".output");
          let mGroupOutput = document.getElementById("mGroupOutput");
       let otherOutput = document.querySelector(".otherOutput");
+        let mContainer = document.getElementsByTagName("input");
 
       otherOutput.innerHTML = "The values have been reset!";
       setTimeout((myReset) => {
